@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>შუშაბანდი — ყავა და დესერტები ძველ თბილისში</title>
+  <meta name="description" content="„შუშაბანდი“ — პატარა ყავახანა ძველ თბილისში: ადგილზე დაფქული ყავა, ქართული დესერტები და მაგიდის ონლაინ დაჯავშნა.">
+  <meta name="theme-color" content="#5A3B28">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">მთავარ შიგთავსზე გადასვლა</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="#top" aria-label="შუშაბანდი — მთავარი">
+        <svg class="logo-icon" viewBox="0 0 64 64" width="36" height="36" aria-hidden="true">
+          <path d="M8 62V30a24 24 0 0 1 48 0v32z" fill="#5A3B28"/>
+          <path d="M13 30a19 19 0 0 1 18-19v14H13z" fill="#A8323E"/>
+          <path d="M33 11a19 19 0 0 1 18 19v-5H33z" fill="#E0A33A"/>
+          <rect x="13" y="27" width="18" height="14" fill="#3E7D5A"/>
+          <rect x="33" y="27" width="18" height="14" fill="#2F5D9E"/>
+          <rect x="13" y="43" width="18" height="15" fill="#E0A33A"/>
+          <rect x="33" y="43" width="18" height="15" fill="#3A9BA6"/>
+        </svg>
+        <span class="logo-text">შუშაბანდი</span>
+      </a>
+
+      <nav class="main-nav" aria-label="მთავარი ნავიგაცია">
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-list">
+          <span class="menu-toggle-bar"></span>
+          <span class="menu-toggle-bar"></span>
+          <span class="menu-toggle-bar"></span>
+          <span class="visually-hidden">მენიუს გახსნა</span>
+        </button>
+        <ul class="nav-list" id="nav-list">
+          <li><a class="nav-link" href="#specials">შემოთავაზებები</a></li>
+          <li><a class="nav-link" href="#menu">მენიუ</a></li>
+          <li><a class="nav-link" href="#about">ჩვენ შესახებ</a></li>
+          <li><a class="nav-link" href="#booking">დაჯავშნა</a></li>
+          <li><a class="nav-link" href="#contact">კონტაქტი</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- მთავარი ეკრანი -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-text">
+        <h1 class="hero-title" id="hero-title">ყავა ძველი თბილისის შუშაბანდზე</h1>
+        <p class="hero-lead">ყავას ადგილზე ვფქვავთ, დესერტებს ყოველ დილით ვაცხობთ. დაჯავშნეთ მაგიდა ფერადი მინის ფანჯარასთან.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#booking">მაგიდის დაჯავშნა</a>
+          <a class="btn btn-secondary" href="#menu">მენიუს ნახვა</a>
+        </div>
+        <p class="hero-hours">ორშ–პარ <time datetime="08:00">08:00</time>–<time datetime="22:00">22:00</time>, შაბ–კვ <time datetime="09:00">09:00</time>–<time datetime="23:00">23:00</time></p>
+      </div>
+
+      <!-- შუშაბანდის ფანჯარა, აწყობილი CSS Grid-ით -->
+      <div class="window" aria-hidden="true">
+        <div class="window-grid">
+          <span class="pane pane-teal"></span>
+          <span class="pane pane-amber"></span>
+          <span class="pane pane-ruby"></span>
+          <span class="pane pane-green"></span>
+          <span class="pane pane-ruby"></span>
+          <span class="pane pane-clear"></span>
+          <span class="pane pane-blue"></span>
+          <span class="pane pane-amber"></span>
+          <span class="pane pane-amber"></span>
+          <span class="pane pane-green"></span>
+          <span class="pane pane-ruby"></span>
+          <span class="pane pane-blue"></span>
+          <span class="pane pane-teal"></span>
+          <span class="pane pane-amber"></span>
+          <span class="pane pane-green"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- სლაიდერი -->
+    <section class="section specials" id="specials" aria-labelledby="specials-title">
+      <div class="container">
+        <h2 class="section-title" id="specials-title">სეზონის შემოთავაზებები</h2>
+
+        <div class="slider" aria-roledescription="carousel" aria-label="სეზონის შემოთავაზებები">
+          <div class="slider-viewport">
+            <ul class="slider-track">
+              <li class="slide" aria-roledescription="slide" aria-label="1 / 4">
+                <figure class="slide-figure">
+                  <img class="slide-image" src="images/slide-1.svg" alt="ტარხუნის მწვანე ლიმონათი მაღალ ჭიქაში, ლაიმის ნაჭრით" width="800" height="600" decoding="async">
+                  <figcaption class="slide-caption">
+                    <h3 class="slide-title">ტარხუნის ლიმონათი</h3>
+                    <p class="slide-text">სახლში მოხარშული ტარხუნის სიროფი, ლაიმი და ცივი მინერალური წყალი.</p>
+                    <p class="slide-price">7 ₾</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="slide" aria-roledescription="slide" aria-label="2 / 4">
+                <figure class="slide-figure">
+                  <img class="slide-image" src="images/slide-2.svg" alt="ფლეტ უაითი თეთრ ფინჯანში, ზემოდან დახატული გული" width="800" height="600" loading="lazy" decoding="async">
+                  <figcaption class="slide-caption">
+                    <h3 class="slide-title">ფლეტ უაითი</h3>
+                    <p class="slide-text">ორმაგი ესპრესო და ხავერდოვანი რძე. ვამზადებთ ეთიოპიური მარცვლით.</p>
+                    <p class="slide-price">8 ₾</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="slide" aria-roledescription="slide" aria-label="3 / 4">
+                <figure class="slide-figure">
+                  <img class="slide-image" src="images/slide-3.svg" alt="ფელამუში თეფშზე, ზემოდან ნიგვზით" width="800" height="600" loading="lazy" decoding="async">
+                  <figcaption class="slide-caption">
+                    <h3 class="slide-title">ფელამუში</h3>
+                    <p class="slide-text">ყურძნის ბადაგისგან მოხარშული ტრადიციული დესერტი, ნიგვზით.</p>
+                    <p class="slide-price">9 ₾</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="slide" aria-roledescription="slide" aria-label="4 / 4">
+                <figure class="slide-figure">
+                  <img class="slide-image" src="images/slide-4.svg" alt="ორი ჩურჩხელა და ესპრესოს ფინჯანი" width="800" height="600" loading="lazy" decoding="async">
+                  <figcaption class="slide-caption">
+                    <h3 class="slide-title">ჩურჩხელა და ესპრესო</h3>
+                    <p class="slide-text">კახური ჩურჩხელა ესპრესოსთან ერთად. ყველაზე ხშირად სწორედ ამ წყვილს უკვეთავენ.</p>
+                    <p class="slide-price">10 ₾</p>
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+          </div>
+
+          <div class="slider-controls" hidden>
+            <button class="slider-btn slider-prev" type="button" aria-label="წინა შემოთავაზება">&#8249;</button>
+            <div class="slider-dots"></div>
+            <button class="slider-btn slider-next" type="button" aria-label="შემდეგი შემოთავაზება">&#8250;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- მენიუ -->
+    <section class="section menu-section" id="menu" aria-labelledby="menu-title">
+      <div class="container">
+        <h2 class="section-title" id="menu-title">მენიუ</h2>
+        <p class="section-intro">ფასები მითითებულია ლარში. ფერადი კვადრატი კატეგორიას აღნიშნავს.</p>
+
+        <div class="menu-filters" role="group" aria-label="მენიუს კატეგორიები" hidden>
+          <button class="filter-btn is-active" type="button" data-filter="all" aria-pressed="true">ყველა</button>
+          <button class="filter-btn" type="button" data-filter="coffee" aria-pressed="false"><span class="dot dot-amber"></span>ყავა</button>
+          <button class="filter-btn" type="button" data-filter="drinks" aria-pressed="false"><span class="dot dot-green"></span>ჩაი და გამაგრილებელი</button>
+          <button class="filter-btn" type="button" data-filter="desserts" aria-pressed="false"><span class="dot dot-ruby"></span>დესერტები</button>
+        </div>
+
+        <ul class="menu-grid">
+          <li class="menu-item" data-category="coffee">
+            <div class="menu-item-row">
+              <h3 class="menu-item-name"><span class="dot dot-amber"></span>ესპრესო</h3>
+              <span class="menu-item-price">4 ₾</span>
+            </div>
+            <p class="menu-item-text">მოკლე და მკვრივი, ჩვენი ბლენდით.</p>
+          </li>
+          <li class="menu-item" data-category="coffee">
+            <div class="menu-item-row">
+              <h3 class="menu-item-name"><span class="dot dot-amber"></span>კაპუჩინო</h3>
+              <span class="menu-item-price">6 ₾</span>
+            </div>
+            <p class="menu-item-text">ესპრესო, ცხელი რძე და სქელი ქაფი.</p>
+          </li>
+          <li class="menu-item" data-category="coffee">
+            <div class="menu-item-row">
+              <h3 class="menu-item-name"><span class="dot dot-amber"></span>ფლეტ უაითი</h3>
+              <span class="menu-item-price">8 ₾</span>
+            </div>
+            <p class="menu-item-text">ორმაგი ესპრესო და ხავერდოვანი რძე.</p>
+          </li>
+          <li class="menu-item" data-category="coffee">
+            <div class="menu-item-row">
+              <h3 class="menu-item-name"><span class="dot dot-amber"></span>ფილტრის ყავა</h3>
+              <span class="menu-item-price">7 ₾</span>
+            </div>
+            <p class="menu-item-text">მარცვალს ყოველ კვირას ვცვლით.</p>
+          </li>
+          <li class="menu-item" data-category="coffee">
+            <div class="menu-item-row">
+              <h3 class="menu-item-name"><span class="dot dot-amber"></span>ყავა ქვიშაზე</h3>
+              <span class="menu-item-price">5 ₾</span>
+            </div>
+            <p class="menu-item-text">მოხარშული ცხელ ქვიშაზე, ძველებურად.</p>
+          </li>
+          <li class="menu-item" data-category="drinks">
+            <div class="menu-item-row">
+              <h3 class="menu-item-name"><span class="dot dot-green"></span>მთის ჩაი</h3>
+              <span class="menu-item-price">5 ₾</span>
+            </div>
+            <p class="menu-item-text">კავკასიური მთის ბალახები და თაფლი.</p>
+          </li>
+          <li class="menu-item" data-category="drinks">
+            <div class="menu-item-row">
+              <h3 class="menu-item-name"><span class="dot dot-green"></span>ტარხუნის ლიმონათი</h3>
+              <span class="menu-item-price">7 ₾</span>
+            </div>
+            <p class="menu-item-text">ტარხუნის სიროფი, ლაიმი და მინერალური წყალი.</p>
+          </li>
+          <li class="menu-item" data-category="drinks">
+            <div class="menu-item-row">
+              <h3 class="menu-item-name"><span class="dot dot-green"></span>ცივი ყავა</h3>
+              <span class="menu-item-price">8 ₾</span>
+            </div>
+            <p class="menu-item-text">18 საათის განმავლობაში ცივ წყალში დაყენებული ყავა.</p>
+          </li>
+          <li class="menu-item" data-category="desserts">
+            <div class="menu-item-row">
+              <h3 class="menu-item-name"><span class="dot dot-ruby"></span>ფელამუში</h3>
+              <span class="menu-item-price">9 ₾</span>
+            </div>
+            <p class="menu-item-text">ყურძნის ბადაგი და ნიგოზი.</p>
+          </li>
+          <li class="menu-item" data-category="desserts">
+            <div class="menu-item-row">
+              <h3 class="menu-item-name"><span class="dot dot-ruby"></span>ჩურჩხელა</h3>
+              <span class="menu-item-price">6 ₾</span>
+            </div>
+            <p class="menu-item-text">კახური, ნიგვზით.</p>
+          </li>
+          <li class="menu-item" data-category="desserts">
+            <div class="menu-item-row">
+              <h3 class="menu-item-name"><span class="dot dot-ruby"></span>ნაზუქი</h3>
+              <span class="menu-item-price">4 ₾</span>
+            </div>
+            <p class="menu-item-text">ტკბილი პური დარიჩინით და ქიშმიშით.</p>
+          </li>
+          <li class="menu-item" data-category="desserts">
+            <div class="menu-item-row">
+              <h3 class="menu-item-name"><span class="dot dot-ruby"></span>ჩიზქეიქი ლეღვის ჯემით</h3>
+              <span class="menu-item-price">10 ₾</span>
+            </div>
+            <p class="menu-item-text">ნაღების ყველი და სახლში მოხარშული ლეღვის ჯემი.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ჩვენ შესახებ -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="container about-inner">
+        <div class="about-text">
+          <h2 class="section-title" id="about-title">ჩვენ შესახებ</h2>
+          <p>შუშაბანდი ძველი თბილისის ერთ-ერთ ეზოში, მეორე სართულის აივანზე მდებარეობს. აივნის ფერადი მინა ას წელზე მეტი ხნისაა: ჩვენ მხოლოდ გავწმინდეთ და შიგნით ყავის აპარატი შევიტანეთ.</p>
+          <p>აქ სულ 24 ადგილია, ამიტომ შაბათ-კვირას მაგიდის წინასწარ დაჯავშნას გირჩევთ.</p>
+        </div>
+        <aside class="hours" aria-labelledby="hours-title">
+          <h3 class="hours-title" id="hours-title">სამუშაო საათები</h3>
+          <dl class="hours-list">
+            <div class="hours-row">
+              <dt>ორშაბათი–პარასკევი</dt>
+              <dd><time datetime="08:00">08:00</time>–<time datetime="22:00">22:00</time></dd>
+            </div>
+            <div class="hours-row">
+              <dt>შაბათი–კვირა</dt>
+              <dd><time datetime="09:00">09:00</time>–<time datetime="23:00">23:00</time></dd>
+            </div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <!-- დაჯავშნის ფორმა -->
+    <section class="section booking" id="booking" aria-labelledby="booking-title">
+      <div class="container booking-inner">
+        <div class="booking-text">
+          <h2 class="section-title" id="booking-title">მაგიდის დაჯავშნა</h2>
+          <p>შეავსეთ ფორმა და დაჯავშნას ტელეფონით დაგიდასტურებთ. 8-ზე მეტი სტუმრისთვის დაგვირეკეთ.</p>
+        </div>
+
+        <form class="booking-form" id="booking-form" action="#" method="post">
+          <div class="form-field">
+            <label class="form-label" for="name">სახელი</label>
+            <input class="form-input" type="text" id="name" name="name" autocomplete="given-name" required minlength="2" aria-describedby="name-error">
+            <p class="form-error" id="name-error"></p>
+          </div>
+
+          <div class="form-field">
+            <label class="form-label" for="phone">მობილურის ნომერი</label>
+            <input class="form-input" type="tel" id="phone" name="phone" autocomplete="tel" inputmode="tel" placeholder="5XX XX XX XX" required minlength="9" aria-describedby="phone-error">
+            <p class="form-error" id="phone-error"></p>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label class="form-label" for="date">თარიღი</label>
+              <input class="form-input" type="date" id="date" name="date" required aria-describedby="date-error">
+              <p class="form-error" id="date-error"></p>
+            </div>
+
+            <div class="form-field">
+              <label class="form-label" for="time">დრო</label>
+              <select class="form-input" id="time" name="time" required aria-describedby="time-error">
+                <option value="">აირჩიეთ</option>
+                <option>09:00</option>
+                <option>10:00</option>
+                <option>11:00</option>
+                <option>12:00</option>
+                <option>13:00</option>
+                <option>14:00</option>
+                <option>15:00</option>
+                <option>16:00</option>
+                <option>17:00</option>
+                <option>18:00</option>
+                <option>19:00</option>
+                <option>20:00</option>
+                <option>21:00</option>
+              </select>
+              <p class="form-error" id="time-error"></p>
+            </div>
+
+            <div class="form-field">
+              <label class="form-label" for="guests">სტუმრები</label>
+              <select class="form-input" id="guests" name="guests" required>
+                <option>1</option>
+                <option selected>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label class="form-check">
+              <input type="checkbox" name="window" value="yes">
+              მირჩევნია მაგიდა ფანჯარასთან
+            </label>
+          </div>
+
+          <div class="form-field">
+            <label class="form-label" for="note">კომენტარი <span class="form-optional">(არასავალდებულო)</span></label>
+            <textarea class="form-input form-textarea" id="note" name="note" rows="3" maxlength="200" aria-describedby="note-count"></textarea>
+            <p class="form-hint" id="note-count">0 / 200</p>
+          </div>
+
+          <button class="btn btn-primary form-submit" type="submit">მაგიდის დაჯავშნა</button>
+          <p class="form-success" id="form-success" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- კონტაქტი -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 class="section-title" id="contact-title">როგორ მოგვაგნოთ</h2>
+        <div class="contact-grid">
+          <address class="contact-item">
+            <h3 class="contact-label">მისამართი</h3>
+            <p>კოტე აფხაზის ქუჩა 24, მეორე სართული.<br>შესასვლელი ეზოდანაა.</p>
+          </address>
+          <div class="contact-item">
+            <h3 class="contact-label">ტელეფონი და ელფოსტა</h3>
+            <p><a href="tel:+995322000000">+995 32 2 00 00 00</a><br><a href="mailto:hello@shushabandi.ge">hello@shushabandi.ge</a></p>
+          </div>
+          <div class="contact-item">
+            <h3 class="contact-label">როგორ მოხვიდეთ</h3>
+            <p>მეტროსადგურ „თავისუფლების მოედნიდან“ ფეხით 10 წუთია.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-name">შუშაბანდი</p>
+      <p class="footer-note">© <span id="year">2026</span>. სასწავლო პროექტი: ყავახანა და საკონტაქტო მონაცემები გამოგონილია.</p>
+    </div>
+  </footer>
+
+  <a class="back-to-top" href="#top" aria-label="გვერდის დასაწყისში დაბრუნება">&#8593;</a>
+</body>
+</html>
