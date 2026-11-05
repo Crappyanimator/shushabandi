@@ -8,6 +8,13 @@
   <meta name="theme-color" content="#5A3B28">
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
+  <!-- JavaScript მუშაობს: CSS-ს ვატყობინებთ, რომ მობილური მენიუ დაიმალოს -->
+  <script>document.documentElement.classList.add("js");</script>
+  <script src="js/nav.js" defer></script>
+  <script src="js/slider.js" defer></script>
+  <script src="js/menu-filter.js" defer></script>
+  <script src="js/booking-form.js" defer></script>
+  <script src="js/ui.js" defer></script>
 </head>
 <body id="top">
   <a class="skip-link" href="#main">მთავარ შიგთავსზე გადასვლა</a>
@@ -152,6 +159,7 @@
           <button class="filter-btn" type="button" data-filter="drinks" aria-pressed="false"><span class="dot dot-green"></span>ჩაი და გამაგრილებელი</button>
           <button class="filter-btn" type="button" data-filter="desserts" aria-pressed="false"><span class="dot dot-ruby"></span>დესერტები</button>
         </div>
+        <p class="menu-status visually-hidden" role="status" aria-live="polite"></p>
 
         <ul class="menu-grid">
           <li class="menu-item" data-category="coffee">
@@ -332,7 +340,7 @@
 
           <div class="form-field">
             <label class="form-check">
-              <input type="checkbox" name="window" value="yes">
+              <input type="checkbox" id="window-seat" name="window-seat" value="yes">
               მირჩევნია მაგიდა ფანჯარასთან
             </label>
           </div>
