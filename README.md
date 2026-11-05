@@ -3,7 +3,7 @@
 Front-end პროგრამირების პრაქტიკული პროექტი (მოდული 06.1.1.9).
 ავტორი: ალექსანდრე
 
-**ლაივ ვერსია:** https://USERNAME.github.io/shushabandi/
+**ლაივ ვერსია:** https://Crappyanimator.github.io/shushabandi/
 
 ![საიტი დესკტოპზე](docs/screenshots/desktop.png)
 
@@ -295,7 +295,7 @@ python tests/site_checks.py
 
 **ლოკალურად:** `index.html` გახსენით ბრაუზერში (ორჯერ დაწკაპუნებით) ან VS Code-ში Live Server-ით. ინტერნეტი არ არის საჭირო.
 
-**GitHub Pages:** რეპოზიტორიუმში Settings → Pages → Source: „Deploy from a branch“ → `main` / `(root)` → Save. ერთ-ორ წუთში საიტი გაიხსნება მისამართზე `https://USERNAME.github.io/shushabandi/`.
+**GitHub Pages:** რეპოზიტორიუმში Settings → Pages → Source: „Deploy from a branch“ → `main` / `(root)` → Save. ერთ-ორ წუთში საიტი გაიხსნება მისამართზე `https://Crappyanimator.github.io/shushabandi/`.
 
 ## 13. ეკრანის ანაბეჭდები
 
