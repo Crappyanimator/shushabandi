@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#B9822A"/>
+  <g fill="#E0A33A">
+    <rect x="30" y="30" width="170" height="255"/>
+    <rect x="215" y="30" width="170" height="255"/>
+    <rect x="400" y="30" width="170" height="255"/>
+    <rect x="585" y="30" width="185" height="255"/>
+    <rect x="30" y="300" width="170" height="270"/>
+    <rect x="215" y="300" width="170" height="270"/>
+    <rect x="400" y="300" width="170" height="270"/>
+    <rect x="585" y="300" width="185" height="270"/>
+  </g>
+  <circle cx="414" cy="314" r="175" fill="#7A5418" opacity="0.35"/>
+  <circle cx="400" cy="300" r="175" fill="#F7F3EC"/>
+  <circle cx="400" cy="300" r="150" fill="none" stroke="#E6DED0" stroke-width="3"/>
+  <rect x="505" y="282" width="105" height="40" rx="20" fill="#FFFFFF"/>
+  <circle cx="400" cy="300" r="122" fill="#FFFFFF"/>
+  <circle cx="400" cy="300" r="102" fill="#8A5A35"/>
+  <circle cx="400" cy="300" r="102" fill="none" stroke="#B07A4F" stroke-width="10"/>
+  <path d="M400 362c-66-44-66-112-22-112 13 0 22 10 22 22 0-12 9-22 22-22 44 0 44 68-22 112z" fill="#F4E6D2"/>
+  <ellipse cx="262" cy="410" rx="20" ry="13" fill="#C9C2B6" transform="rotate(-40 262 410)"/>
+  <line x1="276" y1="395" x2="330" y2="335" stroke="#C9C2B6" stroke-width="8" stroke-linecap="round"/>
+</svg>
