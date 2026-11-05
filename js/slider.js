@@ -92,9 +92,10 @@ function initSlider() {
     autoplayTimer = null;
   }
 
+  // ტაიმერი თავიდან იწყებს ათვლას, თუ ამის პირობები არსებობს
   function restartAutoplay() {
     stopAutoplay();
-    startAutoplay();
+    updateAutoplay();
   }
 
   // ---------- ღილაკები ----------
@@ -137,14 +138,49 @@ function initSlider() {
     }
   });
 
+  // ---------- როდის უნდა მუშაობდეს ავტომატური გადართვა ----------
+  // მხოლოდ მაშინ, როცა სლაიდერი ეკრანზე ჩანს, ჩანართი აქტიურია
+  // და მომხმარებელი სლაიდერს მაუსით ან ფოკუსით არ ეხება.
+  let isOnScreen = false;
+  let isUserInside = false;
+
+  function updateAutoplay() {
+    if (isOnScreen && !isUserInside && !document.hidden) {
+      startAutoplay();
+    } else {
+      stopAutoplay();
+    }
+  }
+
   // მაუსის მიტანისას ან ფოკუსისას პაუზა, რომ ტექსტის წაკითხვა მოასწრონ
-  slider.addEventListener("mouseenter", stopAutoplay);
-  slider.addEventListener("mouseleave", startAutoplay);
-  slider.addEventListener("focusin", stopAutoplay);
-  slider.addEventListener("focusout", startAutoplay);
+  slider.addEventListener("mouseenter", function () {
+    isUserInside = true;
+    updateAutoplay();
+  });
+  slider.addEventListener("mouseleave", function () {
+    isUserInside = false;
+    updateAutoplay();
+  });
+  slider.addEventListener("focusin", function () {
+    isUserInside = true;
+    updateAutoplay();
+  });
+  slider.addEventListener("focusout", function () {
+    isUserInside = false;
+    updateAutoplay();
+  });
+
+  // სხვა ჩანართზე გადასვლისას ტაიმერი ჩერდება
+  document.addEventListener("visibilitychange", updateAutoplay);
+
+  // ეკრანს მიღმა სლაიდერი ტყუილად არ ტრიალებს
+  const visibilityObserver = new IntersectionObserver(function (entries) {
+    isOnScreen = entries[0].isIntersecting;
+    updateAutoplay();
+  });
+  visibilityObserver.observe(slider);
 
   goToSlide(0);
-  startAutoplay();
 }
 
 initSlider();

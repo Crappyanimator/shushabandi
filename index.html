@@ -7,6 +7,9 @@
   <meta name="description" content="„შუშაბანდი“ — პატარა ყავახანა ძველ თბილისში: ადგილზე დაფქული ყავა, ქართული დესერტები და მაგიდის ონლაინ დაჯავშნა.">
   <meta name="theme-color" content="#5A3B28">
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <!-- პირველ ეკრანზე საჭირო ქართული შრიფტები წინასწარ იტვირთება, რომ ტექსტი არ „ხტებოდეს“ -->
+  <link rel="preload" href="fonts/noto-serif-georgian-georgian-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/noto-sans-georgian-georgian-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/style.css">
   <!-- JavaScript მუშაობს: CSS-ს ვატყობინებთ, რომ მობილური მენიუ დაიმალოს -->
   <script>document.documentElement.classList.add("js");</script>
@@ -88,14 +91,14 @@
     </section>
 
     <!-- სლაიდერი -->
-    <section class="section specials" id="specials" aria-labelledby="specials-title">
+    <section class="section specials" id="specials" aria-labelledby="specials-title" aria-roledescription="carousel">
       <div class="container">
         <h2 class="section-title" id="specials-title">სეზონის შემოთავაზებები</h2>
 
-        <div class="slider" aria-roledescription="carousel" aria-label="სეზონის შემოთავაზებები">
+        <div class="slider">
           <div class="slider-viewport">
-            <ul class="slider-track">
-              <li class="slide" aria-roledescription="slide" aria-label="1 / 4">
+            <div class="slider-track">
+              <div class="slide" role="group" aria-roledescription="slide" aria-label="1 / 4">
                 <figure class="slide-figure">
                   <img class="slide-image" src="images/slide-1.svg" alt="ტარხუნის მწვანე ლიმონათი მაღალ ჭიქაში, ლაიმის ნაჭრით" width="800" height="600" decoding="async">
                   <figcaption class="slide-caption">
@@ -104,8 +107,8 @@
                     <p class="slide-price">7 ₾</p>
                   </figcaption>
                 </figure>
-              </li>
-              <li class="slide" aria-roledescription="slide" aria-label="2 / 4">
+              </div>
+              <div class="slide" role="group" aria-roledescription="slide" aria-label="2 / 4">
                 <figure class="slide-figure">
                   <img class="slide-image" src="images/slide-2.svg" alt="ფლეტ უაითი თეთრ ფინჯანში, ზემოდან დახატული გული" width="800" height="600" loading="lazy" decoding="async">
                   <figcaption class="slide-caption">
@@ -114,8 +117,8 @@
                     <p class="slide-price">8 ₾</p>
                   </figcaption>
                 </figure>
-              </li>
-              <li class="slide" aria-roledescription="slide" aria-label="3 / 4">
+              </div>
+              <div class="slide" role="group" aria-roledescription="slide" aria-label="3 / 4">
                 <figure class="slide-figure">
                   <img class="slide-image" src="images/slide-3.svg" alt="ფელამუში თეფშზე, ზემოდან ნიგვზით" width="800" height="600" loading="lazy" decoding="async">
                   <figcaption class="slide-caption">
@@ -124,8 +127,8 @@
                     <p class="slide-price">9 ₾</p>
                   </figcaption>
                 </figure>
-              </li>
-              <li class="slide" aria-roledescription="slide" aria-label="4 / 4">
+              </div>
+              <div class="slide" role="group" aria-roledescription="slide" aria-label="4 / 4">
                 <figure class="slide-figure">
                   <img class="slide-image" src="images/slide-4.svg" alt="ორი ჩურჩხელა და ესპრესოს ფინჯანი" width="800" height="600" loading="lazy" decoding="async">
                   <figcaption class="slide-caption">
@@ -134,8 +137,8 @@
                     <p class="slide-price">10 ₾</p>
                   </figcaption>
                 </figure>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
 
           <div class="slider-controls" hidden>
@@ -325,7 +328,7 @@
 
             <div class="form-field">
               <label class="form-label" for="guests">სტუმრები</label>
-              <select class="form-input" id="guests" name="guests" required>
+              <select class="form-input" id="guests" name="guests">
                 <option>1</option>
                 <option selected>2</option>
                 <option>3</option>
@@ -362,13 +365,13 @@
       <div class="container">
         <h2 class="section-title" id="contact-title">როგორ მოგვაგნოთ</h2>
         <div class="contact-grid">
-          <address class="contact-item">
+          <div class="contact-item">
             <h3 class="contact-label">მისამართი</h3>
-            <p>კოტე აფხაზის ქუჩა 24, მეორე სართული.<br>შესასვლელი ეზოდანაა.</p>
-          </address>
+            <address>კოტე აფხაზის ქუჩა 24, მეორე სართული.<br>შესასვლელი ეზოდანაა.</address>
+          </div>
           <div class="contact-item">
             <h3 class="contact-label">ტელეფონი და ელფოსტა</h3>
-            <p><a href="tel:+995322000000">+995 32 2 00 00 00</a><br><a href="mailto:hello@shushabandi.ge">hello@shushabandi.ge</a></p>
+            <p><a href="tel:+995322000000">+995&nbsp;32&nbsp;2&nbsp;00&nbsp;00&nbsp;00</a><br><a href="mailto:hello@shushabandi.ge">hello@shushabandi.ge</a></p>
           </div>
           <div class="contact-item">
             <h3 class="contact-label">როგორ მოხვიდეთ</h3>
